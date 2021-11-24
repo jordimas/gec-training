@@ -13,5 +13,5 @@ perl ../multi-bleu.perl tgt-test.txt < predictions.txt >> bleu.txt
 sacrebleu tgt-test.txt -i predictions.txt -m bleu >> bleu.txt
 
 # Gleu
-../../../gec-training/gleu/compute_gleu -s src-test.txt -r tgt-tests.txt -o predictions.txt
+../../../gec-training/gleu/compute_gleu -s src-test.txt -r tgt-test.txt -o predictions.txt
 cat bleu.txt

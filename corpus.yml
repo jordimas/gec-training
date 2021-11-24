@@ -1,5 +1,5 @@
 source_files:
-    - src.txt
+    - src-raw.txt
 
 target_files:
-    - tgt.txt
+    - tgt-raw.txt
