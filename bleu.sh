@@ -6,8 +6,8 @@ tgtLanguage=${BASH_REMATCH[2]}
 
 # test data set
 onmt-main --config data.yml --auto_config infer --features_file src-test.txt.token > predictions.txt.token
-#perl ../multi-bleu.perl tgt-test.txt.token < predictions.txt.token 
-python3 ../sentencepiece-bleu.py
+
+python3 ../sentencepiece-bleu.py # token -> to text
 echo "multi-bleu.perl" > bleu.txt
 perl ../multi-bleu.perl tgt-test.txt < predictions.txt >> bleu.txt
 echo "sacrebleu" >> bleu.txt
