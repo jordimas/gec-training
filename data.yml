@@ -21,11 +21,11 @@ eval:
     export_on_best: bleu
     max_exports_to_keep: 3
 
-early_stopping:
-    # (optional) The target metric name (default: "loss").
-    metric: bleu
-    # (optional) The metric should improve at least by this much to be considered
-    # as an improvement (default: 0)
-    min_improvement: 0.5
-    steps: 1
+    early_stopping:
+        # (optional) The target metric name (default: "loss").
+        metric: bleu
+        # (optional) The metric should improve at least by this much to be considered
+        # as an improvement (default: 0)
+        min_improvement: 0.5
+        steps: 1
 
